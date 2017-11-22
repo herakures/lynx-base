@@ -14,5 +14,5 @@ $(function(){
       $('body,html').animate({scrollTop:position - navHeight - 20}, speed, 'swing');
       return false; 
     });
-
+    
 });

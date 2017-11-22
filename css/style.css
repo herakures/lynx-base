@@ -113,6 +113,14 @@ a img:hover {
 .content-top:not(last-of-type) {
     margin-bottom: 70px;
 }
+.title-top {
+    margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+    .title-top {
+        margin-bottom: 24px;
+    }    
+}
 
 /* ヘッダー */
 @media (min-width: 768px) {    
@@ -223,6 +231,11 @@ a img:hover {
     line-height: 1;
     margin: 0;
     font-size: 60px;
+}
+@media screen and (min-width: 768px) {    
+    .service-description {
+        height: 120px;
+    }
 }
 
 /* 冒頭文 */
