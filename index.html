@@ -47,22 +47,22 @@
     
 <div id="about" class="container content-top">
     <div class="row">
-        <div class="col-12 col-md-6">
-            <h2>ごあいさつ</h2>
-            <p class="visible-pc__block">
+        <div class="col-12 col-md-4">
+            <div class="prof-image text-center">
+                <img src="img/prof_crop.jpg" alt="">
+            </div>
+            <p class="hidden-pc__block">
             大阪でWeb制作業をしている、黒田と申します。<br>
-            2012年よりWeb制作業に携わり、これまで30以上の案件に関わってきました。<br>
+            2012年よりWeb制作業に携わり、多くの案件に関わってきました。<br>
             当サイトでは私の経歴と実績を掲載しています。大阪近郊でパートナーや依頼先をお求めの際、参考にしていただければ幸いです。<br>
             右下のチャットシステムから、相談を受け付けておりますので、お気軽にご入力下さい。
             </p>
         </div>
-        <div class="col-12 col-md-6">
-            <div class="prof-image">
-                <img src="https://picsum.photos/940/490" alt="">
-            </div>
-            <p class="hidden-pc__block">
+        <div class="col-12 col-md-8">
+            <h2>ごあいさつ</h2>
+            <p class="visible-pc__block">
             大阪でWeb制作業をしている、黒田と申します。<br>
-            2012年よりWeb制作業に携わり、30以上の案件に関わってきました。<br>
+            2012年よりWeb制作業に携わり、これまで30以上の案件に関わってきました。<br>
             当サイトでは私の経歴と実績を掲載しています。大阪近郊でパートナーや依頼先をお求めの際、参考にしていただければ幸いです。<br>
             右下のチャットシステムから、相談を受け付けておりますので、お気軽にご入力下さい。
             </p>
@@ -77,7 +77,7 @@
     <div class="col-md-6">
       <p class="service-icon text-center"><i class="fe fe-desktop"></i></p>
       <h2 class="service-title text-center">Webサイト制作</h2>
-      <p class="service-description">デザインデータをもとに、PC・タブレット・スマートフォン対応のWebサイトを構築します。Bootstrapを用いた、CSSフレームワークによる、スピーディーな構築も可能です。</p><p class="text-center"><a href="#modal_1" class="btn btn-default">詳しく見る</a></p>
+      <p class="service-description">デザインデータをもとに、PC・タブレット・スマートフォン対応のWebサイトを構築します。Bootstrapをはじめとした、CSSフレームワークによる、スピーディーな構築も可能です。</p><p class="text-center"><a href="#modal_1" class="btn btn-default">詳しく見る</a></p>
     </div>
     <div class="col-md-6">
       <p class="service-icon text-center"><i class="fe fe-gear"></i></p>
@@ -88,7 +88,11 @@
 </div>
       
 <h2 id="work" class="text-center">実績・活動</h2>
-<p class="text-center text-gray">実績の一部を掲載します</p>
+<p class="text-center text-gray">こちらに掲載する案件は公開可能なもののみですが、<br>
+非公開案件を含めると、<br>
+コーポレート、ポータル、メディア、ショッピング、会員サイト、ランディングページなど、<br>
+様々な種類のサイト構築の実績があります。
+</p>
 <div class="content-works content-works-gottsu">
   <div class="container">
       <div class="row">
@@ -103,7 +107,7 @@
           </p>
           <p>構成・ライティングは、冒頭分でターゲットを絞り、 実証データや実績ある登壇者の紹介をして、参加する価値を少しでも知ってもらう工夫をしました。 デザインは関西風と企業向けの両面のでバランスを取りました。</p>
           <p class="works-more">
-            <a href="http://thecreative.jp/gottsu_it_forum/" class="btn-more" target="_blank">もっと見る</a>
+            <a href="http://thecreative.jp/gottsu_it_forum/" class="btn-more" target="_blank">サイトを見る</a>
           </p>
         </div>
       </div>
@@ -123,7 +127,7 @@
           <p>会員サイト(課金システムは無し)という事で、 一部コンテンツのアクセスを制限しています。</p>
           <p>その他会員のレベルの設定(一部管理メニューの表示制限や権限の追加・削除など) をプラグイン(拡張機能)ではなく、自前で構築しました。</p>
           <p class="works-more">
-            <a href="https://wpp.ascenders.co.jp/" class="btn-more" target="_blank">もっと見る</a>
+            <a href="https://wpp.ascenders.co.jp/" class="btn-more" target="_blank">サイトを見る</a>
           </p>
         </div>
         <div class="col-md-6 visible-pc__block">
@@ -163,6 +167,9 @@
             <label for="input-content">お問い合わせ内容</label>
             <textarea name="input-content" id="input-content" class="form-control" rows="5"></textarea>
           </div>
+          <div class="text-center">
+              <button type="submit" class="btn btn-default">送信する</button>
+          </div>
         </form>
     </div>
 </div>
@@ -175,24 +182,30 @@
 <div class="remodal" data-remodal-id="modal_1">
   <button data-remodal-action="close" class="remodal-close"></button>
   <p>
-    デザインデータの書き出し<br>
-    HTML/CSSコーディング<br>
-    テンプレート利用による工数削減<br>
-    アニメーションや演出等、様々な動きを付ける<br>
-    ショッピングサイトサービス等での構築<br>
-    Google MapやYoutubeなど、既存サービスの機能を利用した機能
+    ・デザインデータの書き出し<br>
+    ・HTML/CSSコーディング<br>
+    ・テンプレート利用による工数削減<br>
+    ・アニメーションや演出等、様々な動きを付ける<br>
+    ・XMLまたはJSONをjQueryで解析して表示させる、テキストレベルでの更新システム<br>
+    ・静的サイトジェネレーターを使ったコーディング環境の構築<br>
+    ・SASSを使った保守性・管理性・拡張性に優れたCSS記述<br>
+    ・サイト作成ツール（カラーミー・BASE・Jimdoなど）上でのコーディング<br>
+    ・CSSフレームワーク（Bootstrap）による、一定ルールのデザインにおける工数の削減
   </p>
 </div>
 <div class="remodal" data-remodal-id="modal_2">
   <button data-remodal-action="close" class="remodal-close"></button>
   <p>
-    コーポレートサイト<br>
-    ECサイト<br>
-    ポータルサイト<br>
-    会員サイト<br>
-    複合検索等の機能を付加したサイトの構築<br>
-    既存テンプレートをベースにサイト構築<br>
-    必要なデータをあらかじめ同梱したスターターテーマの作成
+    ・複合検索等の機能を付加したサイトの構築<br>
+    ・既存テンプレートをベースにサイト構築<br>
+    ・必要なデータをあらかじめ同梱したスターターテーマの作成<br>
+    ・独自テーマ・プラグインの開発<br>
+    ・管理画面のカスタマイズ<br>
+    ・DBから必要な情報の呼び出し・項目の追加<br>
+    ・WordPressのプラグインを利用した会員サイトやECサイト開発<br>
+    ・WordPressの拡張（セキュリティ/SEO/記事投稿能率アップ）<br>
+    ・要望にあったプラグインの提案<br>
+    ・外部パートナーデザイナーと連携してのWebサイト構築
   </p>
 </div>
 
