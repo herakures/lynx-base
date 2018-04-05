@@ -23,6 +23,15 @@ a img:hover {
     opacity: .7;
 }
 
+@media screen and (max-width: 768px) {
+    h2, .h2 {
+        font-size: 24px;
+    }
+    h3, .h3 {
+        font-size: 20px;
+    }
+}
+
 /* 汎用class */
 .bg-gray {
     background: #eee;
@@ -100,6 +109,12 @@ a img:hover {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .row .col-md-6:not(:last-child) {
+        margin: 0 0 40px;
+    }
+}
+
 .btn-plane {
     border: solid 1px #eee;
     display: inline-block;
@@ -113,16 +128,45 @@ a img:hover {
 .content-top:not(last-of-type) {
     margin-bottom: 70px;
 }
-.title-top {
-    margin-bottom: 48px;
+.title-wrapper {
+    text-align: center;
 }
-@media (min-width: 768px) {
-    .title-top {
-        margin-bottom: 24px;
-    }    
+.title-top {
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.4;
+    padding:0.25em 1em;
+    display: inline-block;
+    top:0;
+}
+
+.title-top:before,.title-top:after{ 
+    position: absolute;
+    top: 0;
+    content:'';
+    width: 8px;
+    height: 100%;
+    display: inline-block;
+}
+.title-top:before{
+    border-left: solid 1px black;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    left: 0;
+}
+.title-top:after{
+    content: '';
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    right: 0;
 }
 
 /* ヘッダー */
+.navbar-brand {
+    font-weight: bold;
+}
 @media (min-width: 768px) {    
     .navbar.navbar-inverse {
         background-color: #fff;
@@ -230,7 +274,7 @@ a img:hover {
 .service-icon {
     line-height: 1;
     margin: 0;
-    font-size: 60px;
+    font-size: 30px;
 }
 @media screen and (min-width: 768px) {    
     .service-description {
@@ -248,12 +292,19 @@ a img:hover {
 /* 実績 */
 .content-works-gottsu {
     background: #eeeeee6e;
+    margin: 40px 0 0;
+}
+.content-works-gray {
+    background: #eeeeee6e;
 }
 .content-works-wpp {
     background: #fff;
 }
 .content-works {
     padding: 60px 0;
+}
+.works .content-works:last-of-type {
+    margin: 0 0 60px;
 }
 @media screen and (max-width: 992px) {  
     .works-image {
@@ -285,4 +336,8 @@ footer {
 }
 footer * {
     color: #999;
+}
+
+.remodal-wrapper p {
+    text-align: left;
 }
