@@ -46,7 +46,7 @@ a img:hover {
     display: block;
 }
 .btn-more {
-    background: #fff;
+    /* background: #fff; */
     border: solid 1px #ccc;
     display: inline-block;
     padding: 1rem 2rem;
